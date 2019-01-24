@@ -2,7 +2,7 @@
 
 - name: download prometheus mosquitto exporter binary
   get_url:
-    url: "{{ mosquitto_exporter_download_url }}"
+    url: "{{ prometheus_mosquitto_exporter_download_url }}"
     dest: "{{ prometheus_exporters_common_dist_dir }}/{{ prometheus_mosquitto_exporter_release_name }}.tar.gz"
 
 - name: unarchive binary tarball
