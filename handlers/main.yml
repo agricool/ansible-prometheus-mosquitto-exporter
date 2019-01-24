@@ -1,0 +1,9 @@
+---
+
+- name: reenable mosquitto exporter service
+  command: systemctl reenable prometheus-mosquitto-exporter.service
+
+- name: restart mosquitto exporter
+  service:
+    name: prometheus-mosquitto-exporter
+    state: restarted

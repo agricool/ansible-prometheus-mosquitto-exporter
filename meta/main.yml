@@ -1,0 +1,22 @@
+---
+
+dependencies:
+  - UnderGreen.prometheus-exporters-common
+
+galaxy_info:
+  author: Jérôme Velociter
+  company: Agricool
+  description: Deploy Prometheus Mosquitto Exporter
+  license: GPLv2
+  min_ansible_version: 2.0
+  platforms:
+  - name: Debian
+    versions:
+    - jessie
+    - wheezy
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+  galaxy_tags:
+  - monitoring

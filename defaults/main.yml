@@ -1,0 +1,9 @@
+---
+mosquitto_exporter_version: 0.5.0
+mosquitto_exporter_release_name: "mosquitto_exporter-{{ mosquitto_exporter_version }}.linux-amd64"
+
+mosquitto_exporter_download_url: "https://s3-eu-west-1.amazonaws.com/agricoool-artifacts-public/mosquitto_exporter_v{{ prometheus_mosquitto_exporter_version }}.tar.gz"
+
+mosquitto_exporter_config_flags:
+  'endpoint': 'tcp://127.0.0.1:1883'
+  'bind-address': '0.0.0.0:9234'
